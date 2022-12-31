@@ -1,0 +1,7 @@
+{
+  "name": "pisos-santcugat",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
