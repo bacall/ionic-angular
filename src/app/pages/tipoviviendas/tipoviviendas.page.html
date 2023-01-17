@@ -1,0 +1,42 @@
+<app-header titulo="Tipo Vivienda"></app-header>
+<ion-content class=" ion-padding">
+
+    <br><br>
+
+    <div *ngFor="let tipovivienda of tipoviviendas; let i= index ; count as totalCount" class="w-auto">
+        <div *ngIf="i===0">
+            <div class="viv">
+                {{tipoVivienda}}
+            </div>
+        </div>
+        <div class="">
+            <h2 class="desctipus">
+                {{tipovivienda.DescTipus}} <br>
+                {{tipovivienda.Zona}}
+            </h2>
+            
+            <a [routerLink]="['/detalle/', tipovivienda.Ref]"> 
+                <img id="first" style="width:100%" src="https://www.pisossantcugat.net/img/fotos/fotosg/{{tipovivienda.Ref}}-1.jpg?rfx={{refresh}}" alt="{{tipovivienda.DescCorta | removeWords}}">
+            </a>
+            <div>
+            {{tipovivienda.DescCorta | removeWords}}
+            <a [routerLink]="['/detalle/', tipovivienda.Ref]"> 
+                <div class="vermas ion-padding">
+                    <h5> Ver más →</h5>
+                </div>
+            </a>
+            
+            <a [routerLink]="['/detalle/', tipovivienda.Ref]"> 
+                <div class="refsantcugat">ID: {{tipovivienda.Ref}}</div>
+                <div class="precios">
+                    {{ tipovivienda.PreuEuros | priceFormat  }}&nbsp;€
+                </div>
+            </a>
+        </div>
+        </div>
+        <div *ngIf="i!==totalCount-1">
+        <hr class="divido">
+    </div>
+    </div>
+</ion-content>
+<app-footer></app-footer>

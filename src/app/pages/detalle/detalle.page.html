@@ -1,0 +1,47 @@
+<app-header titulo="detalle"></app-header>
+
+<ion-content class=" ion-padding">
+  <div class="container">
+
+
+    <div *ngFor="let detalle of detallevivienda; let i= index" class="w-auto">
+
+      <!--
+    <a [href]="'https://www.pisossantcugat.net/detalle/planta-baja/sant-cugat--sant-francesc/1276' | sanitizeUrl : 'whatsapp://send?text=Pisos%20Sant%20Cugat%20'" target="_blank">
+      <span style="font-size:11px">
+        <img src="assets/img/whatsapp.jpg" alt="compartir whatsapp">
+      </span>
+    </a>
+  -->
+
+      <div class="col-md-4">
+        <div>
+          <h2 class="desctipus">
+            {{detalle.DescTipus | typeVivienda}} - {{detalle.Zona}}
+          </h2>
+          <span class="refsantcugat">Referencia: {{detalle.Ref}} </span>
+        </div>
+
+        <div class="col-md-12" *ngFor="let num of numPhotos; let i = index">
+          <img id="first" style="max-width: 100%"
+            src="https://www.pisossantcugat.net/img/fotos/fotosg/{{detalle.Ref}}-{{i+1}}.jpg?{{refresh}}" alt="{{detalle.DescCorta | removeWords}}" />
+          <div *ngIf="i===0">
+            <div class="ion-padding-start">
+              <a (click)="openLink()">
+                <span style="font-size:11px">
+                  <img src="assets/img/whatsapp.jpg" alt="compartir whatsapp" title="Share wWatsapp" style="width:43px">
+                </span>
+              </a>
+            </div>
+            <div>
+              {{detalle.DescLarga | removeWords}}
+            </div>
+            <p class="precios ion-float-end">{{detalle.PreuEuros | priceFormat }} €</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>
+<app-footer></app-footer>

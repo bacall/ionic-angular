@@ -1,0 +1,257 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+
+.container{ width:100%}
+.h3ini1 {
+    line-height: 1.42857143;
+    color: #333;
+    font-size: 25px
+}
+.quienes{
+   background: rgb(8, 144, 55); 
+}
+
+
+.h3tel{
+    font-size: 21px;
+}
+.justify{
+	text-align: justify;
+    
+}
+.h3ini2 {
+text-align:center; line-height: 1.42857143; color:#333; font-size:13px;margin-top: -13px;
+}
+.h3ini2 a{
+ color:#333;
+}
+.initext {
+    background: #FFF; 
+    padding: 13px 34px 13px 34px;
+	overflow:hidden;
+	border-right: 4px #fff solid;
+    border-bottom: 0px #fff solid;
+	height:110vh
+}
+.envolt{
+    width: 0px;
+}
+.info{color:#58c; line-height: 2.5rem;}
+.viv {
+    float: left;
+    text-align: center;
+    margin-top: -34px;
+    background: #58c;
+    color: #fff;
+    border-radius: 8px;
+    padding: 5px 21px 3px 21px;
+}
+.desctipus {
+    font-weight: 500;
+    font-size: 18px;
+    padding: 0;
+    color: #888;
+    margin-top: -3px;
+}
+.vermas {
+    background: #58c;
+    color: #FFF;
+    padding: 0.5px 1px 0.5px 1px;
+    text-align: center;
+    border-radius: 8px;
+}
+.refsantcugat {
+    color: red;
+    float: right;
+    margin: 5px 0 21px 0;
+    font-weight: 600;
+}
+.precios{
+    padding: 5px 0 21px 0;
+}
+.divido {
+    border: 3;
+    border-top: 3px solid #ccc;
+    margin-bottom: 55px;
+}
+center{color:#58c}
+a:hover {
+    background-color: transparent;
+    color: #58c !important;
+}
+.contactar{
+	padding:8px;background: #58c;color: #fff !important; font-size:21px;border-radius: 8px;
+}
+.contactar:hover{
+	background: #555;
+	color: #fff !important;
+}
+img#buttoni {
+    border:none;
+    margin: 21px 0px 0px 8px;
+	
+}
+
+.coverpage{
+	display: table; background-size:cover; height:33vh; border-right:4px #fff solid;border-bottom:5px #fff solid; width: 50%;
+}
+.subcoverpage{
+display: table-cell; vertical-align: middle;text-align:center; width:100vw
+}
+.subcoverpage a{
+color:#FFF; font-size:1.34rem; text-shadow: 3px 3px 2px #000000
+}
+#pisos{
+background-image:url(https://www.pisossantcugat.net/img/portada/pisos.jpg);	
+}
+#plantasbajas{
+background-image:url(https://www.pisossantcugat.net/img/portada/plantas-bajas.jpg);	
+}
+#aticos{
+background-image:url(https://www.pisossantcugat.net/img/portada/aticos.jpg);	
+}
+#torres{
+background-image:url(https://www.pisossantcugat.net/img/portada/torres.jpg);	
+}
+#obranueva{
+background-image:url(https://www.pisossantcugat.net/img/portada/obra-nueva.jpg);	
+}
+#terrenos{
+background-image:url(https://www.pisossantcugat.net/img/portada/terrenos.jpg);	
+}
+#locales{
+background-image:url(https://www.pisossantcugat.net/img/portada/locales.jpg);	
+}
+#alquileres{
+background-image:url(https://www.pisossantcugat.net/img/portada/alquileres.jpg);	
+}
+#bellaterra{
+background-image:url(https://www.pisossantcugat.net/img/portada/bellaterra.jpg);	
+}
+#sabadell{
+background-image:url(https://www.pisossantcugat.net/img/portada/torres.jpg);	
+}
+#cerdanyola{
+background-image:url(https://www.pisossantcugat.net/img/portada/cerdanyola.jpg);	
+}
+#Barcelona{
+background-image:url(https://www.pisossantcugat.net/img/portada/barcelona.jpg);	
+}
+#Terrassa{
+background-image:url(https://www.pisossantcugat.net/img/portada/terrassa.jpg); 
+}
+#destacadosimg{
+background-image:url(https://www.pisossantcugat.net/img/portada/destacados.jpg);		
+}
+#destacados{text-align:center; height:55px}
+#otraslocalidades{margin-top:5rem; text-align:center}
+#typeelement{text-align:center; height:auto}
+#typeelement h2{}
+#typeelement img{ max-width:100%;box-shadow: 8px 3px 13px rgba(144, 144, 144, 0.8);}
+#titulovivienda{
+	float: left;
+    margin-left: 13px;
+    text-align: center;
+    margin-bottom: 34px;
+    padding-bottom: 5px;
+    background: #58c;
+    color: #fff;
+    border-radius: 8px;	
+	margin-top:34px; 
+	height:auto;
+}
+#desctipusportada{
+    font-weight: 500;
+    font-size: 18px;
+    padding: 0;
+    color: #000;
+    margin-top: -3px;	
+}
+#desccover a{
+ text-decoration:none; color:#000; font-size:13px
+}
+.detail1{ padding:0}
+.detail1 a{ color:#C53}
+.detail2{ padding:0; text-align:right}
+.detail2 a{padding-right:5px}
+#aicat{ font-size:18px; padding-top:13px}
+.mailelemet, .mailelemetext{ width:100%; padding-left:5px}
+label{ font-size:21px; font-weight:normal; color:#FFF !important}
+.divbtnemail{ width:100%; text-align:center;margin-left: 2%; text-align:center}
+.btnemail1{ width:45%; margin-top:18px;padding: 8px;font-size: 21px; background:#333}
+.btnemail1:hover{background: #555; color:#FFF !important}
+.btnemail2{ width:45%; margin-top:18px;padding: 8px;font-size: 21px; background:#555}
+.btnemail2:hover{background: #888; color:#FFF !important}
+.initext2{background:#58c;border-right: 4px #fff solid; border-bottom: 5px #fff solid;}
+.conth3{color:#FFF}
+#error{background:#333; color:#FFF; padding: 5px 3px 3px 13px; margin-top:8px; visibility:hidden; height:34px}
+a{ text-decoration: none;}
+#b2 {
+    display: inline;
+    font-weight: 600;
+    color: #000000;
+}
+#b {
+    display: inline;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+@media (max-width: 1315px) {
+.justify{
+	text-align: left;
+    
+}
+.h3ini1 {
+    font-size: 21px
+}
+.h3ini2 {
+font-size:21px
+}
+}
+@media (max-width: 812px){
+
+#titulovivienda { width:100%}
+#b {
+    font-size: 21px;
+}
+.h3ini1 {
+    font-size: 18px
+}
+.h3ini2 {
+font-size:13px
+}
+}
+@media (max-width: 480px){
+    #bellaterra{margin-left: 0rem;}
+}
+@media (max-width: 480px){
+.initext {
+    height: auto !important;
+}
+#titulovivienda { width:89%}
+.container-fluid {
+    padding-right: 0;
+    padding-left: 5px;
+}
+#b {
+    font-size: 11px;
+}
+}
+@media only screen  
+and (min-width : 320px)  
+and (max-width : 812px)  
+and (orientation : landscape) {  
+.coverpage{
+	height:89vh;
+} 
+} 
+@media (max-width: 480px){
+    #bellaterra{margin-left: 0rem;}
+}

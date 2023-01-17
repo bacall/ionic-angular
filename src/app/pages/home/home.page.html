@@ -1,0 +1,93 @@
+ <app-header titulo="home"></app-header>
+<ion-content>
+    
+    <ion-grid>
+        <ion-row>
+            <ion-col class="ion-text-center">
+
+              
+               
+               
+                <div *ngFor="let portada of portadas; let i= index " class="w-auto">
+
+                    <div class="coverpage ion-float-start" *ngIf="i===0">
+                        <div class="subcoverpage quienes">
+                            <h3 class="h3ini1  ion-text-center info">
+                                <a [routerLink]="['../quienes']">¿Quienes <br />somos?</a>
+                            </h3>
+                        </div>     
+                    </div>
+
+                    <div id="pisos" class="coverpage ion-float-start" *ngIf="portadas[i][0].numpisos>0">
+                        <div class="subcoverpage">
+                            <a [routerLink]="['../vivienda/pisos']"> Pisos {{portadas[i][0].numpisos}}</a>
+                        </div>
+                    </div>
+            
+                    <div id="plantasbajas" class="coverpage ion-float-start" *ngIf="portadas[i][0].numplantas>0">
+                        <div class="subcoverpage">
+                            <a [routerLink]="['../vivienda/plantas-bajas']"> Plantas Bajas {{portadas[i][0].numplantas}}</a>
+                        </div>
+                    </div>
+            
+                    <div id="aticos" class="coverpage ion-float-start" *ngIf="portadas[i][0].numaticos>0">
+                        <div class="subcoverpage">
+                            <a [routerLink]="['../vivienda/aticos']"> Áticos {{portadas[i][0].numaticos}}</a>
+                        </div>
+                    </div>
+            
+                    <div id="torres" class="coverpage ion-float-start" *ngIf="portadas[i][0].numtorres>0">
+                        <div class="subcoverpage">
+                            <a [routerLink]="['../vivienda/torres']"> Torres {{portadas[i][0].numtorres}}</a>
+                        </div>
+                    </div>
+            
+                    <div id="obranueva" class="coverpage ion-float-start" *ngIf="portadas[i][0].numobranueva>0">
+                        <div class="subcoverpage">
+                            <a [routerLink]="['../vivienda/obranueva']"> Obra Nueva {{portadas[i][0].numobranueva}}</a>
+                        </div>
+                    </div>
+            
+                    <div id="terrenos" class="coverpage ion-float-start" *ngIf="portadas[i][0].nunterrenos>0">
+                        <div class="subcoverpage">
+                            <a [routerLink]="['../vivienda/terrenos']"> Terrenos {{portadas[i][0].numterrenos}}</a>
+                        </div>
+                    </div>
+            
+                    <div id="locales" class="coverpage ion-float-start" *ngIf="portadas[i][0].numlocales>0">
+                        <div class="subcoverpage">
+                            <a [routerLink]="['../vivienda/locales']"> Locales {{portadas[i][0].numlocales}}</a>
+                        </div>
+                    </div>
+            
+                    <div id="alquileres" class="coverpage ion-float-start" *ngIf="portadas[i][0].numalquileres>0">
+                        <div class="subcoverpage">
+                            <a [routerLink]="['../vivienda/alquileres']"> Alquileres {{portadas[i][0].numalquileres}}</a>
+                        </div>
+                    </div>
+                    
+                    <div id="destacadosimg" class="coverpage ion-float-start" *ngIf="portadas[i][0].destacados>0">
+                        <div class="subcoverpage">
+                            <a [routerLink]="['../vivienda/verdestacados']"> Destacados {{portadas[i][0].destacados}}</a>
+                        </div>
+                    </div>
+            
+                </div>
+                
+                <div *ngFor="let otraZona of otrasZonas; let i= index " class="w-auto">
+                    <div id="{{otraZona.Localidad}}" class="coverpage ion-f ion-float-start" *ngIf="otraZona.Localidad">
+                        <div class="subcoverpage">
+                            <a [routerLink]="['../zonas/otras-ciudades/', otraZona.Localidad]">
+                                {{otraZona.Localidad}} {{numByZonas[0][i][0].contador}}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+               
+
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
+ <app-footer></app-footer>

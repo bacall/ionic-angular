@@ -1,0 +1,32 @@
+<app-header titulo="Contactar"></app-header>
+<ion-content class=" ion-padding">
+  <br><br>
+  <div class="viv">
+    Contactar Con Pisossantcugat
+  </div>
+  <div class="container ion-padding">
+    <div class="divemail">
+      <ion-label class="input-label">Nombre</ion-label>
+      <ion-input id="inputemail" [(ngModel)]="userMailData.nom" type="text"></ion-input>
+    </div>
+    <div class="divemail">
+      <ion-label class="input-label">Telefono</ion-label>
+      <ion-input id="inputemail" [(ngModel)]="userMailData.telefono" type="text"></ion-input>
+    </div>
+    <div class="divemail">
+      <ion-label class="input-label">Email</ion-label>
+      <ion-input id="inputemail" [(ngModel)]="userMailData.email" type="text"></ion-input>
+    </div>
+    <div class="divemail">
+      <ion-label class="input-label">Cuerpo</ion-label>
+      <ion-textarea rows="8" id="inputemail" [(ngModel)]="userMailData.asunto"></ion-textarea>
+    </div>
+    <div class="divemail">
+      <ion-input type="button" id="submit-id" value="Enviar" (click)="sendMail()"></ion-input>
+    </div>
+    <h3 class="h3tel">
+      <a href="tel:+34616474298">Tel: 616 47 42 98</a><br>
+      <a href="tel:+34935908211">Tel: 93 590 82 11</a><br>
+    </h3> 
+  </div>
+</ion-content>
